@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" href="./img/ico.png" type="image/x-icon"/>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+    </script>
+    <title>moonviedo解析</title>
+
+</head>
+<body>
+    <div class="main">
+        <div class="tuijian"><p>默认使用线路1，推荐使用线路2，这个没广告</p></div>
+        <div class="btngroup">
+            <button class="a">线路1</button>
+            <button class="b">线路2</button>
+            <button class="c">线路3</button>
+        </div>
+        <div class="url">
+            <input type="text" class="text">
+            <button class="jiexi">解析</button>
+        </div>
+        <div class="iframe">
+            <iframe src="" frameborder="0"></iframe>
+        </div>
+    </div>
+    <script>
+            const url1 = "https://jx.618g.com/?url=";
+            const url2 = "http://jx.wslmf.com/?url=";
+            const url3 = "http://api.52xmw.com/?url=";
+
+            let url = url1;
+            $(".a").click(function(){
+                url = url1;
+                $("iframe").attr("src",url + $(".text").val());
+            });
+            $(".b").click(function(){
+                url = url2;
+                $("iframe").attr("src",url + $(".text").val());
+            });
+            $(".c").click(function(){
+                url = url3;
+                $("iframe").attr("src",url + $(".text").val());
+            });
+            $(".jiexi").click(function(){
+                $("iframe").attr("src",url + $(".text").val());
+            });
+        </script>
+</body>
+</html>
