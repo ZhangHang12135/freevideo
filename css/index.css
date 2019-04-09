@@ -55,7 +55,27 @@ input[type = text]{
     border-top: 1px dashed #495057;
 }
 iframe{
-    width: 800px;
-    height: 500px;
-    margin: 10px 0;
+    width: 90%;
+    height: 600px;
+    margin: 10px auto;
+}
+@media only screen and (max-width:768px){
+    .main{
+        width: 95%;
+    }
+    .btngroup{
+        width: 90%;
+    }
+    button{
+        margin: 10px 20px;
+    }
+    .url{
+        width: 90%;
+    }
+    .url button{
+        margin: 10px 5px;
+    }
+    iframe{
+        height: 300px;
+    }
 }
