@@ -59,6 +59,9 @@ iframe{
     height: 600px;
     margin: 10px auto;
 }
+.wang{
+    color: #eee;
+}
 @media only screen and (max-width:768px){
     .main{
         width: 95%;
