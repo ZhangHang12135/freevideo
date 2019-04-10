@@ -52,7 +52,7 @@ input[type = text]{
     width: 100%;
     margin: 10px auto;
     text-align: center;
-    border-top: 1px dashed #495057;
+    border: 1px solid #495057;
 }
 iframe{
     width: 90%;
