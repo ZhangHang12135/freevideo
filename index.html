@@ -12,11 +12,14 @@
 </head>
 <body>
     <div class="main">
-        <div class="tuijian"><p>默认使用线路2，推荐使用线路2，这个没广告</p></div>
+        <div class="tuijian"><p>默认使用线路4，超清资源，可支持手机播放</p></div>
         <div class="btngroup">
-            <button class="a">线路1</button>
-            <button class="b">线路2</button>
-            <button class="c">线路3</button>
+            <button value="https://jx.618g.com/?url=">线路1</button>
+            <button value="https://jx.wslmf.com/?url=">线路2</button>
+            <button value="https://api.52xmw.com/?url=">线路3</button>
+            <button value="https://cdn.yangju.vip/k/?url=">线路4</button>
+            <button value="https://jx.lache.me/cc/?url=">线路5</button>
+            <button value="https://api.653520.top/vip/?url=">线路6</button>
         </div>
         <div class="url">
             <input type="text" class="text">
@@ -25,24 +28,11 @@
         <div class="iframe">
             <iframe src="" frameborder="0"></iframe>
         </div>
-        <p class="wang">Misss Wang is Peppa</p>
+        <p class="wang">Miss Wang is Peppa</p>
     </div>
     <script>
-            const url1 = "https://jx.618g.com/?url=";
-            const url2 = "https://jx.wslmf.com/?url=";
-            const url3 = "https://api.52xmw.com/?url=";
-
-            let url = url2;
-            $(".a").click(function(){
-                url = url1;
-                $("iframe").attr("src",url + $(".text").val());
-            });
-            $(".b").click(function(){
-                url = url2;
-                $("iframe").attr("src",url + $(".text").val());
-            });
-            $(".c").click(function(){
-                url = url3;
+            $("button[value]").click(function(){
+                let url = this.value;
                 $("iframe").attr("src",url + $(".text").val());
             });
             $(".jiexi").click(function(){
